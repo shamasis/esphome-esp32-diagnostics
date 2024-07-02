@@ -2,12 +2,12 @@ import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.components import text_sensor
 
-empty_text_sensor_ns = cg.esphome_ns.namespace("empty_text_sensor")
-EmptyTextSensor = empty_text_sensor_ns.class_(
-    "EmptyTextSensor", text_sensor.TextSensor, cg.Component
+esp32diag_ns = cg.esphome_ns.namespace("esp32diag")
+ESP32Diag = esp32diag_ns.class_(
+    "ESP32Diag", text_sensor.TextSensor, cg.Component
 )
 
-CONFIG_SCHEMA = text_sensor.text_sensor_schema(EmptyTextSensor).extend(
+CONFIG_SCHEMA = text_sensor.text_sensor_schema(ESP32Diag).extend(
     cv.COMPONENT_SCHEMA
 )
 

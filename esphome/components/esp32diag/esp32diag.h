@@ -4,13 +4,13 @@
 #include "esphome/components/text_sensor/text_sensor.h"
 
 namespace esphome {
-namespace empty_text_sensor {
+namespace esp32diag {
 
-class EmptyTextSensor : public text_sensor::TextSensor, public Component {
+class ESP32Diag : public text_sensor::TextSensor, public Component {
  public:
   void setup() override;
   void dump_config() override;
 };
 
-}  // namespace empty_text_sensor
+}  // namespace esp32diag
 }  // namespace esphome
